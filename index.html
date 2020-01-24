@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --quiz main container -->
+    <div id="container">
+
+        <!-- quiz start button -->
+        <div id="start">Start Quiz!</div>
+
+
+        <!-- start quiz container -->
+        <div id="quiz">
+
+
+            <!-- Display question here -->
+            <div id="question"></div>
+
+            <!-- display question image here -->
+            <div id="qImg"></div>
+
+            <!-- display answers choices here -->
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+        
+
+            <!-- display timer info here -->
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+
+            <!-- display progress info here -->
+            <div id="progress"></div>
+        
+        <!-- end quiz container -->
+        </div>
+
+
+        <!-- display score here -->
+        <div id="scoreContainer"></div>
+
+
+    </div>
+
+
+    <!-- Lets add more functions to this app -->
+
+    <script src="quiz.js"></script>
+</body>
+</html>
